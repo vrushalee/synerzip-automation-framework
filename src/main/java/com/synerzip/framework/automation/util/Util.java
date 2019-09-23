@@ -6,7 +6,7 @@ package com.synerzip.framework.automation.util;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -28,12 +28,12 @@ public class Util {
 		System.out.println("Capturing ScreenShot: ");
 		File srcFile = ((TakesScreenshot) (driver))
 				.getScreenshotAs(OutputType.FILE);
-		try {
-			FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir")
-					+ "/screenshots/" + fileName + ".jpg"));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		//try {
+		//	FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir")
+			//		+ "/screenshots/" + fileName + ".jpg"));
+	//	} catch (IOException e) {
+	//		e.printStackTrace();
+	//	}
 	}
 
 }
